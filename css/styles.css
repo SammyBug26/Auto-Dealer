@@ -470,12 +470,10 @@ div.allcards section h2 {
   text-align: center;
 }
 div.allcards section img {
-  width: 100%;
-  height: auto;
+  width: 100px;
+  height: 100px;
+  margin: 4rem 5rem 3rem 6.5rem;
   display: block;
-}
-div.allcards section img.e2e {
-  padding: 0;
 }
 div.allcards section p {
   font-style: italic;
@@ -489,6 +487,29 @@ div.allcards section a {
   border-radius: 8px;
   color: white;
   text-decoration: none;
+}
+div.allcards section .car-icon {
+  color: #2e3a59; /* sets main car color */
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin: 5rem 5rem 5rem 6.5rem;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+div.allcards section section:hover .car-icon {
+  color: #0077cc; /* hover accent */
+}
+div.allcards section .keys-icon {
+  color: #2f3e55; /* fob color */
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 4rem 5rem 4rem 6.5rem;
+  transition: color 0.3s ease;
+}
+div.allcards section section:hover .keys-icon {
+  color: #0077cc; /* hover color */
 }
 
 div.reviewWrapper {

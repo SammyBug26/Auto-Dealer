@@ -163,13 +163,12 @@ section {
     text-align: center;
   }
   img {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
+    margin: 4rem 5rem 3rem 6.5rem;
     display: block;
   }
-  img.e2e {
-    padding: 0;
-  }
+  
   p {
     font-style: italic;
   }
@@ -184,6 +183,33 @@ section {
     text-decoration: none;
 
   }
+
+  .car-icon {
+  color: #2e3a59; /* sets main car color */
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin: 5rem 5rem 5rem 6.5rem;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+section:hover .car-icon {
+  color: #0077cc; /* hover accent */
+}
+.keys-icon {
+  color: #2f3e55; /* fob color */
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 4rem 5rem 4rem 6.5rem;
+  transition: color 0.3s ease;
+}
+
+section:hover .keys-icon {
+  color: #0077cc; /* hover color */
+}
+
 
 }// end section
 
@@ -206,7 +232,7 @@ div.reviewWrapper {
   }
   img {
     width: 20px;
-    
+
   }
 }
 
