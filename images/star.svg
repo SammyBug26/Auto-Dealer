@@ -1,0 +1,5 @@
+<!-- Save as star-filled.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="128" height="128" aria-labelledby="title">
+  <title id="title">Star</title>
+  <polygon fill="currentColor" points="12 2.6 14.9 9.2 21.9 9.6 16.6 13.9 18.7 20.6 12 16.9 5.3 20.6 7.4 13.9 2.1 9.6 9.1 9.2 12 2.6"/>
+</svg>

@@ -1,0 +1,22 @@
+header, nav, main, footer {
+    max-width: 960rem;
+    //border: 1px solid pink;
+    margin: auto;
+}
+header {
+  a {
+    padding: 2rem 0 2rem 25rem;
+  }
+}
+
+
+div.allcards{
+section {
+    flex-basis: calc(25% - (($gutter*3)/4));
+}// end section
+}// end allcards
+
+footer div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

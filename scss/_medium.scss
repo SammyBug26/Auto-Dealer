@@ -1,0 +1,46 @@
+header{
+    padding: 2rem $gutter;
+  span { padding: 3rem 3rem;}
+  a {
+        padding: 2rem 0 2rem 10rem;
+
+  }
+}
+
+nav {
+  font-size: 1.7rem;
+}
+#myButton {display: none;}
+nav.menuLinks {
+    grid-template-rows: 1fr;
+}
+
+nav.menuLinks ul, nav.menuLinks ul.open {
+    display: flex;
+   li a {
+    padding: .4rem 1rem;
+   }
+   a:hover {
+    text-decoration: underline;
+   }
+}// end ul
+
+
+
+
+
+
+div.allcards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gutter;
+section {
+    flex-basis: calc(50% - ($gutter/2));
+}// end section
+}// end allcards
+
+footer div {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}

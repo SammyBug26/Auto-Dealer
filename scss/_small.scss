@@ -1,0 +1,275 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $fontColor;
+  background-color: rgba($secondaryColor, 0.5);
+}
+
+#headerWrapper {
+  background-color: $accentColor;
+  //color: $fontColor;
+
+}
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: .5rem $gutter;
+  gap: 8px;
+  margin: 0;
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+h1 {
+        font-size: 2rem;
+        font-weight: $normalWeight;
+        color: white;
+        padding:2rem 0rem;
+        margin: 0;
+       
+    }
+    a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding:2rem 2rem;
+  margin: 0;
+  font-size: 2rem;
+  align-self: flex-end;
+}
+
+}
+#navWrapper {
+  background-color: rgba($accentColor, 0.5);
+}
+
+
+
+#myButton::before {
+  content: "\2630";
+}
+//style the button
+#myButton {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  font-weight: $lightWeight;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+nav.menuLinks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  //display: none;
+   li a {
+    color: $fontColor;
+    display: block;
+    padding: .75rem $gutter;
+    text-decoration: none;
+    border-bottom: 1px solid $greyColor;
+  }
+  li.active a {
+    color: rgba(255, 255, 255, 0.79);
+  }
+}// end unordered
+
+.menuLinks {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+  ul {
+    overflow: hidden;
+  }
+}
+
+nav.open.menuLinks {
+  grid-template-rows: 1fr;
+}
+#myButton.open::before {
+  content: "\2715";
+}
+
+//main section
+#mainWrapper{
+  h1{
+  padding: 1rem;
+  margin: 0;
+}
+
+.parentHero {
+  border: red dashed 1px;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  p {
+    position: absolute;
+    top: 30%;
+    bottom: 30;
+   background-color: rgb(255, 255, 255, 0.25);
+    margin: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: #600;
+    font-size: 2rem;
+  }
+}
+
+
+}
+div.allcards{
+  padding: 0 $gutter;
+section {
+  background-color: white;
+  border: 1px solid $greyColor;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+  h2, p, img {
+    margin: 0;
+    padding: .5rem $gutter;
+  }
+
+  h2 {
+    background-color: $primaryColor;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  img.e2e {
+    padding: 0;
+  }
+  p {
+    font-style: italic;
+  }
+  a {
+    display: block;
+    background-color: $primaryColor;
+    padding: .75rem;
+    text-align: center;
+    margin: 0 3rem 1rem 3rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+
+  }
+
+}// end section
+
+
+}// end allcards
+
+//begin reviews styling
+div.reviewWrapper {
+  background-color: rgba($secondaryColor, 0.5);
+  padding: 2rem 0;
+  text-align: center;
+}
+#cards {
+  text-align: center;
+  h3 {
+    margin: 2rem $gutter 0 $gutter;
+    text-align: center;
+    color: #000;
+    font-weight: $boldWeight;
+  }
+  img {
+    width: 20px;
+    
+  }
+}
+
+
+
+
+// begin the footer
+#footerWrapper {
+    background-color: $accentColor;
+}
+footer{
+    padding: 0.5rem $gutter;
+    section {
+            ion-icon {
+        color: white;
+      
+      }
+       
+
+    }
+
+    section.contact{
+      p{
+        font-size: 1.3rem;
+        margin: .5rem;
+      }
+       a {
+        text-decoration: none;
+        color: inherit;
+        
+      }
+    
+      ion-icon {
+        color: white;
+        padding-right: 5px;
+      }
+    }//end of contact
+
+    section.social{
+      display: flex;
+      justify-content: center;
+      a {
+        display: block;
+       // border: solid 1px #666;
+        font-size: 2rem;
+        margin: .5rem;
+        padding: .5rem;
+        
+      }
+      a:hover {
+        background-color: rgba($secondaryColor, 0.5);
+      }
+
+    }//end of social
+
+    section.location{
+      font-size: 1.3rem;
+    }//end of location
+
+
+    p.legal{
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+    }
+}
