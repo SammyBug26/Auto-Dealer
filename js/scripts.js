@@ -7,7 +7,7 @@ hamburgerElement.addEventListener('click', () => {
 });
 
 //grab the REVIEWS data from the file
-import { reviews } from 'reviews.js';
+import { reviews } from './reviews.js';
 console.log(reviews);
 
 //create an empty card
